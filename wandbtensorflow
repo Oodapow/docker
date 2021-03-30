@@ -1,0 +1,4 @@
+FROM tensorflow/tensorflow:2.0.4-gpu-py3-jupyter
+
+RUN apt install -y libgl1-mesa-glx
+RUN pip install opencv-python wandb
